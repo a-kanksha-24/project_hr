@@ -1,19 +1,19 @@
 import React from 'react';
-// import './CardComponent.css';
+import imagesData from "../assets/facilities"; // Assuming the correct path for the array of image objects
 
-const CardComponent = ({ img }) => {
+const CardComponent = () => {
     return (
         <div className="card-container">
-            <div className="main-card" style={{ backgroundImage: `url(${img})` }}>
-                <div className="overlay-card">
-                    <h3>Overlay Card</h3>
-                    <p>This is the smaller card centered on top.</p>
+            
+            {imagesData.map((image) => (
+                <div className="main-card" key={image.id}>
+                    <img src={image.url} alt={image.title} />
+                    <div className="overlay-card">
+                        <h3>{image.title}</h3>
+                        <p>{image.description}</p>
+                    </div>
                 </div>
-                <div className="main-content">
-                    <h2>Main Card</h2>
-                    <p>This is the main card content.</p>
-                </div>
-            </div>
+            ))}
         </div>
     );
 };

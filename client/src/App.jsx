@@ -1,8 +1,8 @@
 import './App.css';
 import Header from './components/header';
-import background from './assets/accupressure_background.jpg'; // Ensure this is the correct file path
-// import CardComponent from './components/cardComponent';
+import background from './assets/accupressure_background.jpg';
 import CardDisplay from './components/cardDisplay';
+import Footer from './components/footer';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <img src={background} ></img>
      </div>
      <CardDisplay/>
+     <Footer/>
     </>
     );
 }

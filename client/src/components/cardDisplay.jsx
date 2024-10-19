@@ -1,12 +1,13 @@
-import React from 'react'
-import CardComponent from './cardComponent'
-import swasthyaImage from '../assets/swasthya.jpg';
-const CardDisplay = () => {
-  return (
-    <div>
-      <CardComponent img={swasthyaImage}/>
-    </div>
-  )
-}
+import React from 'react';
+import CardComponent from './cardComponent';
 
-export default CardDisplay
+const Facilities = () => {
+  return (
+    <div className="facilities-section">
+      <h1 className="facilities-heading">Our Facilities</h1>
+      <CardComponent />
+    </div>
+  );
+};
+
+export default Facilities;
