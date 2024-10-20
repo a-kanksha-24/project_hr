@@ -4,6 +4,7 @@ import background from './assets/accupressure_background.jpg';
 import CardDisplay from './components/cardDisplay';
 import Footer from './components/footer';
 import RequestCallbackForm from './components/rcallback';
+import CallNowButton from './components/callNowButton';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <img src={background} ></img>
      </div>
      <CardDisplay/>
+     <CallNowButton phoneNumber={8299178726}/>
      <RequestCallbackForm/>
      <Footer/>
     </>
