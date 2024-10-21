@@ -4,7 +4,7 @@ import DryCupping from './drycupping.jpeg';
 import MagnetTherapy from './magnettherapy.jpeg';
 import PulseDiagnosis from './pulsediagnosis.jpeg';
 
-const imagesData = [
+export const imagesData = [
   {
     id: 1,
     title: "Acupuncture",
@@ -36,5 +36,3 @@ const imagesData = [
     url: PulseDiagnosis,
   },
 ];
-
-export default imagesData;

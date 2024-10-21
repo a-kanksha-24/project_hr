@@ -5,7 +5,9 @@ const Facilities = () => {
   return (
     <div className="facilities-section">
       <h1 className="facilities-heading">Our Facilities</h1>
-      <CardComponent />
+      <div className="animes">
+          <CardComponent/>
+      </div>
     </div>
   );
 };
