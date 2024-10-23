@@ -37,6 +37,7 @@ import CallNowButton from "./components/callNowButton";
 import RequestCallbackForm from "./components/rcallback";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopContextProvider } from "./shop-context";
+import ChatButton from "./components/whatsapp";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
         <RequestCallbackForm />
+        <ChatButton/>
         <Footer />
       </Router>
     </ShopContextProvider>

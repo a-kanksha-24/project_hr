@@ -190,7 +190,9 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  
 }
+
 
 .overlay-show-more-button:hover {
   background-color: #0056b3;
@@ -357,4 +359,42 @@ h2 {
 
 .call-now-btn:hover {
   background-color: #218838;
+}
+
+
+
+.chat-button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.help-text {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+
+}
+
+.help-text a {
+  color:black;
+  text-decoration: none;
+}
+
+.whatsapp-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.help-text:hover {
+  background-color: #1b5e20;
 }
