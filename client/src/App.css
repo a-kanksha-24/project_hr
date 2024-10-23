@@ -1,62 +1,107 @@
-*{
+/* *{
   overflow-x: hidden;
-}
+} */
 
 /* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
-  padding: 20px 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Brand container (logo + name) */
 .brand-container {
   display: flex;
   align-items: center;
 }
 
-/* Brand logo */
 .brand-logo {
   width: 50px;
   height: 50px;
-  object-fit: cover;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
-/* Brand name styling */
 .brand-name {
-  font-size: 1.8rem;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 24px;
+  color: #333;
 }
 
-/* Navbar list (align on the right) */
 .navbar-list {
+  list-style-type: none;
   display: flex;
-  gap: 30px;
-  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 42px;
+}
+
+.navbar-list li {
+  margin-left: 2px;
+  position: relative;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: rgb(9, 126, 9);
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 12px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar links */
-.navbar-list li a {
+.dropdown-menu li a {
   text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  color: #333;
+  display: block;
 }
 
-/* Hover effect on navbar links */
-.navbar-list li a:hover {
-  color: #1abc9c;
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
 }
+
+.dropdown-submenu:hover .dropdown-submenu-menu {
+  display: block;
+}
+
+.dropdown-submenu-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Submenu appears to the right */
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-submenu-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
 
 /* Background section */
 .background-section {

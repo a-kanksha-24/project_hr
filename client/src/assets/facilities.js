@@ -7,7 +7,7 @@ import PulseDiagnosis from './pulsediagnosis.jpeg';
 export const imagesData = [
   {
     id: 1,
-    title: "Acupuncture",
+    title: "Accupuncture",
     description: "A beautiful sunset over the mountains.",
     url: Acupuncture,
   },
