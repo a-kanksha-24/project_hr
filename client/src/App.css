@@ -343,22 +343,49 @@ h2 {
   background-color: #34495e;
 }
 
-
-.call-now-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #28a745; /* Green color */
-  color: white;
+/* .call-button a{
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
-  border: none;
+} */
+.call-button {
+  display: flex;
+  align-items: center;
+  /* background-color: #333;  */
+text-decoration: none;
+  position: fixed;
+  bottom: 30px; /* Positioned above the WhatsApp button */
+  /* right: 20px; */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.call-now-btn:hover {
-  background-color: #218838;
+.call-text {
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: bold;
+  /* text-decoration: none; */
+  background-color: white;
+}
+
+.phone-icon {
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.call-text:hover {
+  background-color: green;
 }
 
 

@@ -1,11 +1,17 @@
 import React from 'react';
+import phoneIcon from '../assets/phone.png'; // Path to your phone icon image
 
-const CallNowButton = ({ phoneNumber }) => {
-  return (
-    <a href={`tel:${phoneNumber}`} className="call-now-btn">
-      Call Now
-    </a>
-  );
-};
+const CallButton = () => {
+    const phoneNumber = "+1234567890"; // Replace with the actual phone number
 
-export default CallNowButton;
+    return (
+        <a href={`tel:${phoneNumber}`} className="call-button">
+            <div className="phone-icon">
+                <img src={phoneIcon} alt="Phone Icon" />
+            </div>
+            <span className="call-text">CALL NOW</span>
+        </a>
+    );
+}
+
+export default CallButton;
