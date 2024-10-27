@@ -1,11 +1,14 @@
 import React from 'react';
+import Sidebar from './sidebar';
+import Content from './accupunctureContent';
 
-const Accupuncture = () => {
+function Accupuncture() {
   return (
-    <div className="about">
-      <h1>Accupuncture</h1>
+    <div className='accupuncture'>
+       <Content />
+      <Sidebar />
     </div>
   );
-};
+}
 
 export default Accupuncture;
