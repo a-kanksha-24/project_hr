@@ -7,7 +7,7 @@ const Header = () => {
         <nav className="navbar">
             <div className="brand-container">
                 <img src={swasthyaImage} alt="Swasthya Logo" className="brand-logo" />
-                <h1 className="brand-name">Swasthya</h1>
+                <h1 className="brand-name">Swasthya Healthcare Centre</h1>
             </div>
             <ul className="navbar-list">
                 <li><a href="/">HOME</a></li>

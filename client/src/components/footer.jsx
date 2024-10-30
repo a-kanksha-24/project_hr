@@ -1,6 +1,7 @@
 // FooterComponent.jsx
 import React from 'react';
-
+import facebook from "../assets/facebook.png"
+import instagram from "../assets/instagram.jpg"
 const Footer = () => {
   return (
     <footer className="footer">
@@ -21,17 +22,22 @@ const Footer = () => {
           </p>
         </div>
         <div className="about">
-          <h2>About Rejua Energy Center</h2>
+          <h2>About Swasthya</h2>
           <p>
             Write about Rejua Energy Center
           </p>
         </div>
         <div className="connect">
           <h2>Connect with us</h2>
+          <div>
+          <img src={facebook}alt='facebook'></img>
+          <img src={instagram}alt='instagram'></img>
+          </div>
+          
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright 2019 - Rejua - All Rights Reserved. Powered by KS</p>
+        <p>Copyright 2019 - Swasthya - All Rights Reserved.</p>
       </div>
     </footer>
   );

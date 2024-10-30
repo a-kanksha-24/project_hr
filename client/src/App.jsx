@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/header";
-import background from "./assets/accupressure_background.jpg";
 import CardDisplay from "./components/cardDisplay";
 import CardPage from "./components/cardPage";
 import About from "./components/navbar/about/aboutus";
@@ -34,7 +33,6 @@ import Naturopathy from "./components/navbar/Treatment/naturotherapy";
 import CuppingTherapy from "./components/navbar/Treatment/cuppingtherapy";
 import Footer from "./components/footer";
 import CallNowButton from "./components/callNowButton";
-import RequestCallbackForm from "./components/rcallback";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShopContextProvider } from "./shop-context";
 import ChatButton from "./components/whatsapp";
@@ -44,9 +42,6 @@ function App() {
     <ShopContextProvider>
       <Router>
         <Header />
-        <div className="background-section">
-          <img src={background}></img>
-        </div>
         <Routes>
           <Route path="/" element={<CardDisplay />} />
           <Route path="/Detail/:id" element={<CardPage />} />
@@ -81,7 +76,6 @@ function App() {
           <Route path="/Weight" element={<Weight/>} />
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
-        <RequestCallbackForm />
         <ChatButton/>
         <Footer />
       </Router>

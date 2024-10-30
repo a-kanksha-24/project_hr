@@ -1,6 +1,7 @@
-/* *{
+/* Hide horizontal overflow on the entire page */
+body {
   overflow-x: hidden;
-} */
+}
 
 /* Navbar container */
 .navbar {
@@ -49,6 +50,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 12px;
 }
+
 
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -110,12 +112,13 @@
   background-repeat: no-repeat;
   background-size: cover; 
   height: 100vh; 
-  width: 100vw; 
+  width: 98vw; 
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  /* margin-right: 10px; */
 }
 
 /* Card container */
@@ -136,6 +139,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+ 
 }
 
 .card-image {
@@ -164,6 +168,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  
 }
 
 .main-card:hover .overlay-card {
@@ -190,12 +195,13 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  
+  text-decoration: none;
 }
 
 
 .overlay-show-more-button:hover {
   background-color: #0056b3;
+ 
 }
 
 
@@ -265,7 +271,7 @@
 }
 
 /* Footer links styling */
-.footer a {
+/* .footer a {
   color:white; 
   text-decoration: none; 
   transition: color 0.3s ease; 
@@ -273,7 +279,7 @@
 
 .footer a:hover {
   color: #1abc9c; 
-}
+} */
 
 /* Footer bottom section */
 .footer-bottom {
@@ -287,6 +293,11 @@
 .footer-bottom p {
   font-size: 0.6rem; 
   color: #bdc3c7; 
+}
+.connect img {
+  height:40px;
+  width: 40px;
+  
 }
 
 
