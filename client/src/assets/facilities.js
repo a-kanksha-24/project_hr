@@ -32,7 +32,7 @@ export const imagesData = [
   },
   {
     id: 5,
-    title: "Accupuncture",
+    title: "Acupuncture",
     description: "A beautiful sunset over the mountains.",
     url: Acupuncture,
   },

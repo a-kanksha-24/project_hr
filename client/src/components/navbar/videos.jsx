@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
+import "./video.css";
+import video from "./video_testimonial.mp4";
 
 const Videos = () => {
   return (
-    <div className="about">
-      <h1>Videos</h1>
-      <video width="100%" autoplay>
-        <source src={'./video_testimonial.mp4'} type="video/mp4" />
-        Your browser does not support the video tag.
+    <div className="videos">
+      <h1>VIDEOS</h1>
+      <video autoPlay controls loop>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag. Please update your browser
+        to view this content.
       </video>
     </div>
   );

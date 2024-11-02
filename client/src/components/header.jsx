@@ -6,8 +6,9 @@ const Header = () => {
     return (
         <nav className="navbar">
             <div className="brand-container">
-                <img src={swasthyaImage} alt="Swasthya Logo" className="brand-logo" />
+              <a href="/"> <img src={swasthyaImage} alt="Swasthya Logo" className="brand-logo" /></a> 
                 <h1 className="brand-name">Swasthya Healthcare Centre</h1>
+                
             </div>
             <ul className="navbar-list">
                 <li><a href="/">HOME</a></li>
@@ -27,7 +28,7 @@ const Header = () => {
                     </a>
                     <ul className="dropdown-menu">
                         <li className="dropdown-submenu">
-                            <a href="/Accupuncture">Acupuncture</a>
+                            <a href="/Acupuncture">Acupuncture</a>
                             {/* Sub-dropdown for Acupuncture
                             <ul className="dropdown-submenu-menu">
                                 <li><a href="/Accupuncture">Accupuncture</a></li>
@@ -41,17 +42,17 @@ const Header = () => {
                                 <li><a href="/Ear">Ear Acupuncture</a></li>
                             </ul> */}
                         </li>
-                        <li><a href="/Accupressure">Acupressure</a></li>
+                        <li><a href="/Acupressure">Acupressure</a></li>
                         <li><a href="/Pulse Diagnosis">Pulse Diagnosis</a></li>
                         <li><a href="/Aroma Therapy">Aroma Therapy</a></li>
                         <li><a href="/Dry Cupping">Dry Cupping Therapy</a></li>
                         <li><a href="/Magnet Therapy">Magnet Therapy</a></li>
-                        <li><a href="/FireCupping">Fire Cupping Therapy</a></li>
-                        <li><a href="/WetCupping">Wet Cupping Therapy</a></li>
+                        <li><a href="/Fire Cupping">Fire Cupping Therapy</a></li>
+                        <li><a href="/Wet Cupping">Wet Cupping Therapy</a></li>
                         <li><a href="/sujok">Sujok Therapy</a></li>
-                        <li><a href="/seedTherapy">Seed Therapy</a></li>
-                        <li><a href="/Color"> Colour Therapy</a></li>
-                        <li><a href="/diet">Diet and Nutrision</a></li>
+                        <li><a href="/Seed Therapy">Seed Therapy</a></li>
+                        <li><a href="/Color Therapy"> Colour Therapy</a></li>
+                        <li><a href="/Diet and Nutrision">Diet and Nutrision</a></li>
                     </ul>
                 </li>
                 <li><a href="/Events">UPCOMING EVENTS</a></li>

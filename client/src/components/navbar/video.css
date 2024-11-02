@@ -1,0 +1,26 @@
+/* video.css */
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px; /* Adjust to fit your layout */
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .videos h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  video {
+    width: 50%;
+    height: 700px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+    object-fit: cover; /* Ensures the video fills the defined width */
+  }
+  

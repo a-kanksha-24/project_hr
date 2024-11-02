@@ -42,18 +42,18 @@ function App() {
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Videos" element={<Videos/>} />
           <Route path="/Contacts" element={<Contacts/>} />
-          <Route path="/Accupuncture" element={<Accupuncture/>} />
+          <Route path="/Acupuncture" element={<Accupuncture/>} />
           <Route path="/Pulse Diagnosis" element={<PulseDiagnosis/>} />
           <Route path="/Aroma Therapy" element={<AromaTherapy/>} />
-          <Route path="/Accupressure" element={<Accupressure/>} />
+          <Route path="/Acupressure" element={<Accupressure/>} />
           <Route path="/Dry Cupping" element={<DryCuppingTherapy/>} />
           <Route path="/Magnet Therapy" element={<MagnetTherapy/>} />
-          <Route path="/FireCupping" element={<FireCupping/>} />
-          <Route path="/WetCupping" element={<WetCuppingTherapy/>} />
+          <Route path="/Fire Cupping" element={<FireCupping/>} />
+          <Route path="/Wet Cupping" element={<WetCuppingTherapy/>} />
           <Route path="/sujok" element={<Sujok/>} />
-          <Route path="/seedTherapy" element={<SeedTherapy/>} />
-          <Route path="/Color" element={<ColorTherapy/>} />
-          <Route path="/diet" element={<Diet/>} />
+          <Route path="/Seed Therapy" element={<SeedTherapy/>} />
+          <Route path="/Color Therapy" element={<ColorTherapy/>} />
+          <Route path="/Diet and Nutrision" element={<Diet/>} />
 
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
