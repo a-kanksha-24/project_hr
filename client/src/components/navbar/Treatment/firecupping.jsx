@@ -1,11 +1,14 @@
 import React from 'react';
+import Sidebar from './sidebar';
+import Content from './firecuppingContent';
 
-const Fire = () => {
+function FireCupping() {
   return (
-    <div className="about">
-      <h1>Fire</h1>
+    <div className='accupuncture'>
+       <Content />
+      <Sidebar />
     </div>
   );
-};
+}
 
-export default Fire;
+export default FireCupping;

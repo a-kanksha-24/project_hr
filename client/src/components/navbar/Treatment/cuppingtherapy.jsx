@@ -1,11 +1,14 @@
 import React from 'react';
+import Sidebar from './sidebar';
+import Content from './cuppingtherapycontent';
 
-const CuppingTherapy = () => {
+function DryCuppingTherapy() {
   return (
-    <div className="about">
-      <h1>CuppingTherapy</h1>
+    <div className='accupuncture'>
+       <Content />
+      <Sidebar />
     </div>
   );
-};
+}
 
-export default CuppingTherapy;
+export default DryCuppingTherapy;

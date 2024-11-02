@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const RequestCallbackForm = () => {
-    // State to manage form input
+   
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -9,7 +9,7 @@ const RequestCallbackForm = () => {
         treatment: ''
     });
 
-    // Handle form input changes
+   
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -18,12 +18,12 @@ const RequestCallbackForm = () => {
         });
     };
 
-    // Handle form submission
+   
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can handle form submission logic here (e.g., send the data to an API)
+       
         console.log('Form submitted:', formData);
-        // Reset form
+       
         setFormData({
             name: '',
             phone: '',
@@ -82,8 +82,7 @@ const RequestCallbackForm = () => {
                         name="treatment"
                         value={formData.treatment}
                         onChange={handleChange}
-                        required
-                    >
+                        required>
                         <option value="" disabled>Select treatment</option>
                         <option value="General Consultation">General Consultation</option>
                         <option value="Dental Care">Dental Care</option>

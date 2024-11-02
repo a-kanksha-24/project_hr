@@ -5,11 +5,12 @@ import MagnetTherapy from './magnettherapy.jpeg';
 import PulseDiagnosis from './pulsediagnosis.jpeg';
 
 export const imagesData = [
+ 
   {
     id: 1,
-    title: "Accupuncture",
-    description: "A beautiful sunset over the mountains.",
-    url: Acupuncture,
+    title: "Pulse Diagnosis",
+    description: "A technique to understand the pulse.",
+    url: PulseDiagnosis,
   },
   {
     id: 2,
@@ -31,8 +32,8 @@ export const imagesData = [
   },
   {
     id: 5,
-    title: "Pulse Diagnosis",
-    description: "A technique to understand the pulse.",
-    url: PulseDiagnosis,
+    title: "Accupuncture",
+    description: "A beautiful sunset over the mountains.",
+    url: Acupuncture,
   },
 ];

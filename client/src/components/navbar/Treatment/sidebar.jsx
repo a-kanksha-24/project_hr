@@ -4,14 +4,14 @@ import './sidebar.css';
 const Sidebar = () => {
   const treatments = [
     'Acupuncture',
-    'Moxibustion',
+    'Accupressure',
     'Cupping Therapy',
     'Fire Cupping',
-    'Scalp Acupuncture',
-    'Acufacial Cosmetic Acupuncture',
-    'Point Injection Therapy',
-    'Paediatric Acupuncture',
-    // Add other treatments here...
+    'Sujok',
+    'Aroma Therapy',
+    'Seed Therapy',
+    'Magnet Therapy',
+    
   ];
 
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import Sidebar from './sidebar';
-import Content from './accupressureContent';
+import Content from './magnetcontent';
 
-function Accupressure() {
+function MagnetTherapy() {
   return (
     <div className='accupuncture'>
        <Content />
@@ -11,4 +11,4 @@ function Accupressure() {
   );
 }
 
-export default Accupressure;
+export default MagnetTherapy;
