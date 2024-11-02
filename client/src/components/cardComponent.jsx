@@ -19,7 +19,7 @@ const CardComponent = () => {
               className="overlay-show-more-button"
               onClick={() => showMoreDetail(image.id)}
             >
-              <Link to={"/Detail/" + image.title}>Show More</Link>
+              <Link to={"/" + image.title}>Show More</Link>
             </button>
           </div>
         </div>
