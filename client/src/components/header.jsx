@@ -27,11 +27,11 @@ const Header = () => {
                     </a>
                     <ul className="dropdown-menu">
                         <li className="dropdown-submenu">
-                            <a href="#">Acupuncture</a>
-                            {/* Sub-dropdown for Acupuncture */}
+                            <a href="/Accupuncture">Acupuncture</a>
+                            {/* Sub-dropdown for Acupuncture
                             <ul className="dropdown-submenu-menu">
                                 <li><a href="/Accupuncture">Accupuncture</a></li>
-                                <li><a href="/Moxibustion">Moxibustion</a></li>
+                            
                                 <li><a href="/CuppingTherapy">Cupping Therapy</a></li>
                                 <li><a href="/FireCupping">Fire Cupping</a></li>
                                 <li><a href="/Scalp">Scalp Acupuncture</a></li>
@@ -39,21 +39,19 @@ const Header = () => {
                                 <li><a href="/Point">Point Injections</a></li>
                                 <li><a href="/Paedriatic">Paediatric Acupuncture</a></li>
                                 <li><a href="/Ear">Ear Acupuncture</a></li>
-                            </ul>
+                            </ul> */}
                         </li>
                         <li><a href="/Accupressure">Acupressure</a></li>
-                        <li><a href="/Hyperbolic">Hyperbaric Oxygen Therapy</a></li>
-                        <li><a href="/Atomic">Atomic Hydrogen Therapy</a></li>
-                        <li><a href="/WholeBody">Whole Body Cryotherapy</a></li>
-                        <li><a href="/Ozone">Ozone Therapy</a></li>
-                        <li><a href="/Colon">Colon Hydrotherapy</a></li>
-                        <li><a href="/Physiotherapy">Physiotherapy</a></li>
-                        <li><a href="HeatCold">Special Heat and Cold Therapy</a></li>
-                        <li><a href="/Naturopathy">Naturopathy</a></li>
-                        <li><a href="/Yoga">Yoga & Diet Therapy</a></li>
-                        <li><a href="/Mudra">Mudra Healing / Su-Jok</a></li>
-                        <li><a href="/Reflexology">Reflexology</a></li>
-                        <li><a href="/Weight">Worry-Free Weight Management</a></li>
+                        <li><a href="/PulseDiagnosis">Pulse Diagnosis</a></li>
+                        <li><a href="/AromaTherapy">Aroma Therapy</a></li>
+                        <li><a href="/DryCupping">Dry Cupping Therapy</a></li>
+                        <li><a href="/MagnetTherapy">Magnet Therapy</a></li>
+                        <li><a href="/FireCupping">Fire Cupping Therapy</a></li>
+                        <li><a href="/WetCupping">Wet Cupping Therapy</a></li>
+                        <li><a href="/sujok">Sujok Therapy</a></li>
+                        <li><a href="/seedTherapy">Seed Therapy</a></li>
+                        <li><a href="/Color"> Colour Therapy</a></li>
+                        <li><a href="/diet">Diet and Nutrision</a></li>
                     </ul>
                 </li>
                 <li><a href="/Events">UPCOMING EVENTS</a></li>

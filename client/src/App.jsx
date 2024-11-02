@@ -25,6 +25,7 @@ import Sujok from "./components/navbar/Treatment/sujok";
 import WetCuppingTherapy from "./components/navbar/Treatment/wetCupping";
 import SeedTherapy from "./components/navbar/Treatment/seedTherapy";
 import ColorTherapy from "./components/navbar/Treatment/color";
+import Diet from "./components/navbar/Treatment/diet";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/sujok" element={<Sujok/>} />
           <Route path="/seedTherapy" element={<SeedTherapy/>} />
           <Route path="/Color" element={<ColorTherapy/>} />
+          <Route path="/diet" element={<Diet/>} />
 
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
