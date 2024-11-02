@@ -43,11 +43,11 @@ function App() {
           <Route path="/Videos" element={<Videos/>} />
           <Route path="/Contacts" element={<Contacts/>} />
           <Route path="/Accupuncture" element={<Accupuncture/>} />
-          <Route path="/PulseDiagnosis" element={<PulseDiagnosis/>} />
-          <Route path="/AromaTherapy" element={<AromaTherapy/>} />
+          <Route path="/Pulse Diagnosis" element={<PulseDiagnosis/>} />
+          <Route path="/Aroma Therapy" element={<AromaTherapy/>} />
           <Route path="/Accupressure" element={<Accupressure/>} />
-          <Route path="/DryCupping" element={<DryCuppingTherapy/>} />
-          <Route path="/MagnetTherapy" element={<MagnetTherapy/>} />
+          <Route path="/Dry Cupping" element={<DryCuppingTherapy/>} />
+          <Route path="/Magnet Therapy" element={<MagnetTherapy/>} />
           <Route path="/FireCupping" element={<FireCupping/>} />
           <Route path="/WetCupping" element={<WetCuppingTherapy/>} />
           <Route path="/sujok" element={<Sujok/>} />

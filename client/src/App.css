@@ -112,7 +112,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   height: 100vh; 
-  width: 98vw; 
+  width: 97.5vw; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,86 +122,80 @@ body {
 }
 
 /* Card container */
+/* Styles for the card container */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  box-shadow: 0 4px 8px rgba(225, 133, 46, 0.1);
+  gap: 80px;
+  padding: 40px;
+  border-radius: 10px;
+  margin-left: 0px;
 }
 
+/* Main card styling */
 .main-card {
   position: relative;
   width: 300px;
-  height: 200px;
-  overflow: hidden;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
- 
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: rgb(191, 194, 190);
 }
 
+.main-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card image styling */
 .card-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  object-position: center; 
-  transition: transform 0.3s ease; 
+  height: 200px;
+  object-fit: cover;
 }
 
-.main-card:hover .card-image {
-  transform: scale(1.05); 
-}
-
+/* Overlay card content */
 .overlay-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  
+  padding: 20px;
 }
 
-.main-card:hover .overlay-card {
-  opacity: 1;
-}
-
+/* Card title */
 .overlay-card h3 {
-  margin: 0;
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* Card description */
 .overlay-card p {
-  margin-top: 10px;
   font-size: 16px;
-  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
 }
 
+/* Show more button styling */
 .overlay-show-more-button {
-  margin-top: 15px;
-  padding: 8px 16px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #333;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-
 .overlay-show-more-button:hover {
-  background-color: #0056b3;
- 
+  background-color: #ddd;
+}
+
+.overlay-show-more-button a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
@@ -227,11 +221,11 @@ body {
 
 /* Footer styling */
 .footer {
-  background-color: #f9f9f9;
-  color: rgb(12, 10, 10); 
+  background-color: #565353;
+  color: rgb(255, 255, 255); 
   padding: 20px 20px; 
   text-align: center; 
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(31, 122, 225, 0.5);
   margin-bottom: 20px;
@@ -258,7 +252,7 @@ body {
 /* Section headings */
 .footer h2 {
   font-size: 1rem; 
-  color: black;
+  color: rgb(232, 141, 110);
   margin-bottom: 8px; 
   text-transform: uppercase;
   letter-spacing: 1px; 
@@ -300,25 +294,28 @@ body {
   
 }
 
-
 .callback-form-container {
   width:100%;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #328d47;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
   /* display: flex; */
   gap: 200px;
+  color: #f0f0f0;
 }
 
 h2 {
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
 }
 
 .callback-form {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
