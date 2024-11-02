@@ -1,6 +1,6 @@
 import React from "react";
-import "./color.css";
-import colorTherapyImage from "./images/colortherapy.jpg";
+import "./about.css";
+import logo from "../Treatment/images/swasthya.jpg";
 
 const Content = () => {
   const effects = [
@@ -27,24 +27,22 @@ const Content = () => {
   return (
     <div className="content">
       <section className="hero">
-        <img src={colorTherapyImage} alt="Color Therapy Session" className="hero-image" />
+        <img src={logo} alt="Swasthya Healthcare Centre" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Color Therapy</h1>
+        <h1>About Swasthya Healthcare Centre</h1>
         <p className="quote">
           <em>
-            "Colors are the smiles of nature. Let them restore your mind and body."
+            "Healing is a journey, and at Swasthya, we walk that path with you."
           </em>
         </p>
         <p className="description">
-          Color therapy, or chromotherapy, is a holistic healing method that uses colors and light 
-          to promote physical, mental, and emotional well-being. Each color in the spectrum has 
-          unique properties and energy frequencies that can influence mood, emotions, and health. 
-          Practitioners of color therapy believe that different colors have different effects on 
-          the body, mind, and spirit. For instance, blue is often used for relaxation and calming 
-          the mind, while yellow can boost mood and energy levels. Color therapy is used as a 
-          complementary treatment to help with stress relief, emotional balance, and overall wellness.
+          Swasthya Healthcare Centre is dedicated to promoting holistic health and well-being 
+          through a variety of alternative therapies. Our experienced practitioners specialize 
+          in treatments such as color therapy, acupuncture, wet cupping therapy, and more, 
+          tailored to support your unique health needs. We believe in treating the whole person 
+          — mind, body, and spirit — to foster lasting wellness and vitality.
         </p>
       </section>
 
@@ -88,6 +86,15 @@ const Content = () => {
             as a complementary approach and can be integrated with other healing practices.
           </p>
         </details>
+      </section>
+
+      <section className="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          If you are interested in learning more about our treatments or scheduling a session, 
+          please reach out to us at <a href="mailto:info@swasthyacentre.com">info@swasthyacentre.com</a> 
+          or call us at (123) 456-7890. We look forward to supporting you on your wellness journey!
+        </p>
       </section>
     </div>
   );

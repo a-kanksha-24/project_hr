@@ -1,11 +1,14 @@
 import React from 'react';
+import Sidebar from '../Treatment/sidebar';
+import Content from './aboutContent';
 
-const About = () => {
+function Accupressure() {
   return (
-    <div className="about">
-      <h1>About</h1>
+    <div className='accupuncture'>
+       <Content />
+      <Sidebar />
     </div>
   );
-};
+}
 
-export default About;
+export default Accupressure;

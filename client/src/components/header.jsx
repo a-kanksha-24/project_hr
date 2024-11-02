@@ -42,10 +42,10 @@ const Header = () => {
                             </ul> */}
                         </li>
                         <li><a href="/Accupressure">Acupressure</a></li>
-                        <li><a href="/PulseDiagnosis">Pulse Diagnosis</a></li>
-                        <li><a href="/AromaTherapy">Aroma Therapy</a></li>
-                        <li><a href="/DryCupping">Dry Cupping Therapy</a></li>
-                        <li><a href="/MagnetTherapy">Magnet Therapy</a></li>
+                        <li><a href="/Pulse Diagnosis">Pulse Diagnosis</a></li>
+                        <li><a href="/Aroma Therapy">Aroma Therapy</a></li>
+                        <li><a href="/Dry Cupping">Dry Cupping Therapy</a></li>
+                        <li><a href="/Magnet Therapy">Magnet Therapy</a></li>
                         <li><a href="/FireCupping">Fire Cupping Therapy</a></li>
                         <li><a href="/WetCupping">Wet Cupping Therapy</a></li>
                         <li><a href="/sujok">Sujok Therapy</a></li>

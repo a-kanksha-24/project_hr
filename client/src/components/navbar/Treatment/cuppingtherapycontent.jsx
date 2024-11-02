@@ -1,63 +1,55 @@
 import React from "react";
 import "./cuppingtherapy.css";
-import cuppingtherapy from "./images/cupping.jpg";
+import cuppingImage from "./images/cupping.jpg";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
-    "Homeostatic or regulatory",
-    "Immune enhancing",
-    "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Improves blood circulation",
+    "Relieves muscle tension",
+    "Reduces inflammation",
+    "Promotes relaxation",
+    "Detoxifies the body",
+    "Accelerates muscle recovery",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
+    "Back and neck pain",
+    "Muscle soreness",
+    "Migraines and headaches",
+    "Anxiety and stress",
     "Arthritis",
-    "Tinnitus",
+    "Respiratory issues",
+    "Fatigue",
+    "Digestive problems",
+    "Skin conditions",
   ];
 
   return (
     <div className="content">
       <section className="hero">
-        <img src={cuppingtherapy} alt="Acupuncture Needles" className="hero-image" />
+        <img src={cuppingImage} alt="Dry Cupping Therapy" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Acupuncture</h1>
+        <h1>Dry Cupping Therapy</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Ancient wisdom for modern healing: relieve tension, improve circulation, and feel renewed."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          Dry cupping therapy is a traditional technique used to promote healing and relieve pain by placing 
+          cups on the skin to create suction. This process helps to increase blood flow to targeted areas, 
+          reduce muscle tension, and draw out toxins from body tissues. Unlike wet cupping, dry cupping does 
+          not involve any incisions or bloodletting, making it a gentler approach that focuses solely on 
+          creating suction to stimulate circulation. Widely used for relieving pain and improving energy flow, 
+          dry cupping therapy is an effective, non-invasive treatment for a variety of physical and emotional 
+          health concerns.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Acupuncture Effect</h2>
+      <section className="cupping-effects">
+        <h2>Benefits of Dry Cupping</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +59,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Acupuncture Treat?</h2>
+      <section className="cupping-conditions">
+        <h2>What Can Dry Cupping Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +73,26 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>Does Dry Cupping Hurt?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            Generally, dry cupping is not painful, though you may feel a pulling or tightness in the area. 
+            Some people find it relaxing, but mild discomfort may occur for those new to cupping.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>Are There Any Side Effects?</summary>
+          <p>
+            After cupping, you may see circular marks or mild bruising where the cups were placed. These marks 
+            are normal and usually fade within a few days. Other side effects are rare but can include slight 
+            skin irritation.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary>How Often Should I Get Cupping Therapy?</summary>
+          <p>
+            The frequency of sessions depends on your specific needs. Many people benefit from weekly or bi-weekly 
+            sessions, especially for chronic issues, while others may only need occasional sessions for maintenance.
+          </p>
         </details>
       </section>
     </div>

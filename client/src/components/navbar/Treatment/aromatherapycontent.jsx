@@ -4,60 +4,54 @@ import aroma from "./images/aroma.webp";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
-    "Homeostatic or regulatory",
-    "Immune enhancing",
-    "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Relaxation and stress relief",
+    "Mood enhancement",
+    "Pain relief",
+    "Improved sleep quality",
+    "Immune system support",
+    "Enhanced respiratory health",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
-    "Arthritis",
-    "Tinnitus",
+    "Anxiety",
+    "Stress",
+    "Insomnia",
+    "Headaches / Migraines",
+    "Digestive issues",
+    "Cold and flu symptoms",
+    "Fatigue",
+    "Muscle soreness",
+    "Skin conditions",
   ];
 
   return (
     <div className="content">
       <section className="hero">
-        <img src={aroma} alt="Pulse Diagnosis" className="hero-image" />
+        <img src={aroma} alt="Aromatherapy session" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Pulse Diagnosis</h1>
+        <h1>Aromatherapy</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Inhale the calm, exhale the stress. Let nature's scents guide you to wellness."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          Aromatherapy is a holistic healing practice that uses natural plant extracts, 
+          known as essential oils, to promote physical and emotional well-being. Essential 
+          oils are derived from various parts of plants, including flowers, leaves, bark, 
+          and roots. Inhaling these oils or applying them to the skin can stimulate the 
+          limbic system in the brain, which is responsible for emotions, memories, and 
+          certain physiological functions. Aromatherapy is widely used to reduce stress, 
+          improve sleep, enhance mood, and support overall wellness. This gentle and 
+          natural therapy is valued for its ability to provide a sense of calm, clarity, 
+          and healing.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Pulse Diagnosis Effect</h2>
+      <section className="aromatherapy-effects">
+        <h2>Benefits of Aromatherapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +61,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Pulse Diagnosis Treat?</h2>
+      <section className="aromatherapy-conditions">
+        <h2>What Can Aromatherapy Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +75,20 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>How Does Aromatherapy Work?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            Aromatherapy works through the inhalation or topical application of 
+            essential oils. The aromatic compounds stimulate brain receptors 
+            that influence emotions, mood, and even physiological responses.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>Is Aromatherapy Safe for Everyone?</summary>
+          <p>
+            Generally, aromatherapy is safe when used correctly. However, 
+            people with certain allergies, pregnant women, and those with 
+            asthma should consult a healthcare professional before use.
+          </p>
         </details>
       </section>
     </div>

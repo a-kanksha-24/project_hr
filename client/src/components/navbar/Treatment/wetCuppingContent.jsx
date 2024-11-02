@@ -4,60 +4,46 @@ import wet from "./images/wetcupping.jpg";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
-    "Homeostatic or regulatory",
-    "Immune enhancing",
-    "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Pain relief",
+    "Reduction of inflammation",
+    "Improvement of blood circulation",
+    "Detoxification",
+    "Muscle relaxation",
+    "Boosts immune function",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
+    "Chronic pain",
+    "Migraines and headaches",
     "Arthritis",
-    "Tinnitus",
+    "Muscle stiffness",
+    "Respiratory conditions",
+    "Skin conditions (e.g., eczema, acne)",
+    "Fatigue",
+    "Stress and anxiety",
+    "Digestive issues",
   ];
 
   return (
     <div className="content">
       <section className="hero">
-        <img src={wet} alt="Acupuncture Needles" className="hero-image" />
+        <img src={wet} alt="Wet Cupping Therapy" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Acupuncture</h1>
+        <h1>Wet Cupping Therapy</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Sometimes the best therapy is a little suction."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          Wet cupping, also known as hijama, is a traditional therapy that involves creating suction on the skin using cups and then making small incisions to draw out a small amount of blood. This method is believed to help eliminate toxins, improve circulation, and promote healing in the body. Wet cupping has been practiced for centuries and is thought to relieve pain and inflammation, enhance physical and mental well-being, and restore balance to the body's energy flow.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Acupuncture Effect</h2>
+      <section className="wet-cupping-effects">
+        <h2>Effects of Wet Cupping Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +53,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Acupuncture Treat?</h2>
+      <section className="wet-cupping-conditions">
+        <h2>What Can Wet Cupping Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +67,22 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>Does Wet Cupping Hurt?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            Some people may experience mild discomfort during the procedure, especially with the incisions, but it is generally well-tolerated.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>How Long Do the Effects Last?</summary>
+          <p>
+            The effects can vary by individual, but many report lasting relief from pain and tension for several days to weeks.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary>Are There Any Side Effects?</summary>
+          <p>
+            Common side effects include temporary bruising, soreness, and fatigue. It is advisable to consult with a healthcare provider before undergoing treatment.
+          </p>
         </details>
       </section>
     </div>

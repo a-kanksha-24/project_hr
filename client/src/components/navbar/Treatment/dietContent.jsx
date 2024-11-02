@@ -4,60 +4,52 @@ import balanced from "./images/balanceddiet.png";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
-    "Homeostatic or regulatory",
-    "Immune enhancing",
-    "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Boosts energy levels",
+    "Supports immune function",
+    "Maintains a healthy weight",
+    "Enhances mental clarity",
+    "Improves digestion",
+    "Reduces risk of chronic diseases",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
-    "Arthritis",
-    "Tinnitus",
+    "High blood pressure",
+    "Diabetes",
+    "Obesity",
+    "Heart disease",
+    "Digestive issues",
+    "Anemia",
+    "Bone health",
+    "Fatigue",
+    "Mood swings",
   ];
 
   return (
     <div className="content">
       <section className="hero">
-        <img src={balanced} alt="Acupuncture Needles" className="hero-image" />
+        <img src={balanced} alt="Balanced Diet" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Acupuncture</h1>
+        <h1>Diet and Nutrition</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Let food be thy medicine and medicine be thy food."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          A balanced diet is crucial for maintaining good health and wellbeing. It provides the body with essential 
+          nutrients—vitamins, minerals, protein, healthy fats, and carbohydrates—that are necessary for energy, 
+          cellular repair, and overall functioning. Proper nutrition can not only improve physical health but also 
+          has a profound impact on mental clarity and emotional balance. A healthy diet includes a variety of foods 
+          from all food groups, emphasizing fruits, vegetables, lean proteins, whole grains, and healthy fats.
+          Adopting good dietary habits can help prevent and manage a range of chronic diseases and promote a 
+          long and healthy life.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Acupuncture Effect</h2>
+      <section className="nutrition-effects">
+        <h2>Benefits of a Balanced Diet</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +59,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Acupuncture Treat?</h2>
+      <section className="nutrition-conditions">
+        <h2>What Can Good Nutrition Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +73,26 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>What is a balanced diet?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            A balanced diet includes a variety of foods in the right proportions from each food group. It focuses 
+            on whole grains, lean proteins, fruits, vegetables, and healthy fats to provide all essential nutrients.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>How can I maintain a healthy diet on a busy schedule?</summary>
+          <p>
+            Planning ahead, meal prepping, and choosing whole, nutrient-dense snacks can help maintain a balanced 
+            diet even on a busy schedule. Consider easy, healthy options like salads, smoothies, and whole grain wraps.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary>Are supplements necessary if I eat a balanced diet?</summary>
+          <p>
+            Generally, a well-rounded diet should provide all necessary nutrients. However, supplements may be 
+            beneficial for certain individuals, like those with specific deficiencies or dietary restrictions. 
+            Consult a healthcare provider for personalized advice.
+          </p>
         </details>
       </section>
     </div>

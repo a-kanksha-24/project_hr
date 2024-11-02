@@ -4,24 +4,23 @@ import pulse from "./images/pulse.jpg";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
-    "Homeostatic or regulatory",
-    "Immune enhancing",
-    "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Enhanced understanding of body health",
+    "Identification of imbalances in the body",
+    "Guidance for treatment protocols",
+    "Improved patient outcomes",
+    "Holistic approach to health assessment",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
-    "Arthritis",
-    "Tinnitus",
+    "Stress and anxiety",
+    "Digestive issues",
+    "Cardiovascular health",
+    "Hormonal imbalances",
+    "Chronic fatigue",
+    "Sleep disorders",
+    "Pain management",
+    "Immune system disorders",
+    "Metabolic issues",
   ];
 
   return (
@@ -34,30 +33,23 @@ const Content = () => {
         <h1>Pulse Diagnosis</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Your body speaks, let us help you listen."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          Pulse diagnosis is a traditional method used in various forms of 
+          medicine, particularly in Traditional Chinese Medicine (TCM) and Ayurveda. 
+          It involves the practitioner feeling the pulse at various points on the wrist 
+          to gain insights into the state of the body’s organs, energy flow, and overall 
+          health. By assessing the quality, strength, and rhythm of the pulse, practitioners 
+          can identify imbalances and guide treatment approaches. This holistic diagnostic 
+          tool helps in understanding not just physical ailments but also emotional and 
+          psychological states, leading to a more comprehensive treatment plan.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Pulse Diagnosis Effect</h2>
+      <section className="pulse-effects">
+        <h2>Benefits of Pulse Diagnosis</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +59,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Pulse Diagnosis Treat?</h2>
+      <section className="pulse-conditions">
+        <h2>What Can Pulse Diagnosis Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +73,28 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>Is Pulse Diagnosis Accurate?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            While pulse diagnosis is a time-honored practice in traditional medicine, 
+            its accuracy can vary based on the practitioner's skill and the individual's 
+            health status. It is often used alongside other diagnostic tools for a 
+            comprehensive assessment.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>How Long Does a Pulse Diagnosis Take?</summary>
+          <p>
+            A pulse diagnosis session typically lasts around 10 to 20 minutes, depending 
+            on the practitioner's approach and the complexity of the health issues being 
+            assessed.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary>Can Anyone Receive a Pulse Diagnosis?</summary>
+          <p>
+            Yes, pulse diagnosis is suitable for individuals of all ages and can be 
+            a valuable tool for anyone seeking to understand their health better.
+          </p>
         </details>
       </section>
     </div>

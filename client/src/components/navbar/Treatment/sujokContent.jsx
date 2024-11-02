@@ -4,60 +4,46 @@ import sujok from "./images/sujok.jpg";
 
 const Content = () => {
   const effects = [
-    "Analgesic",
-    "Sedation",
+    "Pain relief",
+    "Stress reduction",
     "Homeostatic or regulatory",
-    "Immune enhancing",
+    "Enhancement of immune function",
     "Anti-inflammatory and anti-allergic",
-    "Hastens the motor recovery",
+    "Promotion of overall well-being",
   ];
 
   const conditions = [
-    "Headache / Migraine",
-    "Paralysis",
-    "Depression",
-    "Asthma",
-    "Nausea, Vomiting, and Morning sickness",
-    "Hair loss",
-    "Hormonal imbalance",
-    "Arthritis",
-    "Tinnitus",
+    "Headaches and migraines",
+    "Muscle and joint pain",
+    "Stress and anxiety",
+    "Digestive issues",
+    "Sleep disorders",
+    "Skin conditions",
+    "Hormonal imbalances",
+    "Respiratory problems",
+    "Chronic fatigue",
   ];
 
   return (
     <div className="content">
       <section className="hero">
-        <img src={sujok} alt="Acupuncture Needles" className="hero-image" />
+        <img src={sujok} alt="Sujok Therapy" className="hero-image" />
       </section>
 
       <section className="treatment-info">
-        <h1>Acupuncture</h1>
+        <h1>Sujok Therapy</h1>
         <p className="quote">
           <em>
-            "Your body knows how to heal, the needles just help it remember"
+            "Healing at your fingertips."
           </em>
         </p>
         <p className="description">
-          The theory and practice of acupuncture originated in China. The
-          tradition of acupuncture believes that energyflows within the human
-          body and this energy can be channelized to create balance and health.
-          This energy flow is called QI. This QI moves throughout the body,
-          along 12 main channels known as meridians. These meridians represent
-          the major organs and functions of the body. In the healthy state the
-          vital energy flows normally, Interruption in the flow of this vital
-          energy causes disease. These meridians and energy flow are accessible
-          through acupuncture points in the body. Acupuncture points are seen as
-          places where nerves, muscles, and connective tissue can be stimulated.
-          The stimulation increases blood flow, while at the same time
-          triggering the activity of the body’s natural painkillers. it is the
-          safest, effective and a gentle way of treating various ailments.
-          Although it is associated with pain control, it has a much broader
-          application.
+          Sujok therapy is an innovative system of acupuncture and acupressure that focuses on the hands and feet, which are seen as a microcosm of the body. Developed by South Korean scientist Professor Park Jae Woo, this therapy combines traditional Oriental medicine with modern scientific insights to treat various ailments. By applying pressure or stimulating specific points on the hands and feet, practitioners can influence the corresponding areas of the body, promoting healing and balance. Sujok therapy is particularly valued for its simplicity and effectiveness, making it accessible for self-treatment.
         </p>
       </section>
 
-      <section className="acupuncture-effects">
-        <h2>Acupuncture Effect</h2>
+      <section className="sujok-effects">
+        <h2>Effects of Sujok Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
             <li key={index} className="effect-item">
@@ -67,8 +53,8 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="acupuncture-conditions">
-        <h2>What Can Acupuncture Treat?</h2>
+      <section className="sujok-conditions">
+        <h2>What Can Sujok Therapy Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
             <div key={index} className="condition-item">
@@ -81,15 +67,22 @@ const Content = () => {
       <section className="faq">
         <h2>Frequently Asked Questions</h2>
         <details className="faq-item">
-          <summary>Are The Needles Painful?</summary>
+          <summary>Is Sujok Therapy Painful?</summary>
           <p>
-            No, acupuncture needles are very thin, and most people feel little
-            to no pain.
+            No, Sujok therapy is generally not painful. While some pressure is applied to the points, it is typically within a comfortable range.
           </p>
         </details>
         <details className="faq-item">
-          <summary>Are There Standards For Acupuncture Needles?</summary>
-          <p>Yes, acupuncture needles are regulated for safety and quality.</p>
+          <summary>Can Anyone Practice Sujok Therapy?</summary>
+          <p>
+            Yes, Sujok therapy is simple and can be practiced by anyone after basic training, making it an excellent self-care tool.
+          </p>
+        </details>
+        <details className="faq-item">
+          <summary>How Long Does a Session Last?</summary>
+          <p>
+            A typical Sujok therapy session can last anywhere from 20 to 45 minutes, depending on individual needs and the specific conditions being addressed.
+          </p>
         </details>
       </section>
     </div>
