@@ -16,14 +16,14 @@ app.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'Gmail', // e.g., Gmail, Yahoo
         auth: {
-            user: 'akanksha.r.pal@gmail.com', // replace with your email
-            pass: 'gfvzmdsfduzuztui', // replace with your email password or app-specific password
+            user: process.env.USER, // replace with your email
+            pass: process.env.PASS, // replace with your email password or app-specific password
         },
     });
 
     const mailOptions = {
         from: email, // user's email as the sender
-        to: 'akanksha.r.pal@gmail.com', // your email to receive the form data
+        to: process.env.USER, // your email to receive the form data
         subject: `New Callback Request for ${treatment}`,
         text: `You have received a new callback request:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nTreatment: ${treatment}`,
     };
