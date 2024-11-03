@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const RequestCallbackForm = () => {
-   
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -9,7 +9,8 @@ const RequestCallbackForm = () => {
         treatment: ''
     });
 
-   
+    const [responseMessage, setResponseMessage] = useState('');
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -18,12 +19,17 @@ const RequestCallbackForm = () => {
         });
     };
 
-   
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-       
-        console.log('Form submitted:', formData);
-       
+
+        try {
+            const response = await axios.post('http://localhost:5000/send-email', formData);
+            setResponseMessage(response.data.message);
+        } catch (error) {
+            console.error('Error sending email:', error);
+            setResponseMessage('Failed to send email. Please try again later.');
+        }
+
         setFormData({
             name: '',
             phone: '',
@@ -35,6 +41,7 @@ const RequestCallbackForm = () => {
     return (
         <div className="callback-form-container">
             <h2>Request a Call Back</h2>
+            {responseMessage && <p>{responseMessage}</p>}
             <form onSubmit={handleSubmit} className="callback-form">
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
