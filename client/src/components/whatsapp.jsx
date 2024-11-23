@@ -2,8 +2,7 @@ import React from 'react';
 import whatsappIcon from '../assets/whatsappicon.png'; 
 
 const ChatButton = () => {
-    // Define the WhatsApp chat URL
-    const whatsappLink = "https://wa.me/8299178726?text=Hello!%20I%20need%20help%20with%20your%20service"; // Replace with the correct phone number
+    const whatsappLink = "https://wa.me/+918169225341?text=Hello!%20I%20need%20help%20with%20your%20service";
 
     return (
         <div className="chat-button" onClick={() => window.open(whatsappLink, '_blank')}>

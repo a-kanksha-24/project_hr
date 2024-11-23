@@ -1,6 +1,6 @@
 import React from 'react';
 import CardComponent from './cardComponent';
-import background from "../assets/accupressure_background.jpg";
+import background from "../assets/natures_project.jpg";
 import RequestCallbackForm from './rcallback';
 
 const Facilities = () => {

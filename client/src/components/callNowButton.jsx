@@ -2,7 +2,7 @@ import React from 'react';
 import phoneIcon from '../assets/phone.png'; // Path to your phone icon image
 
 const CallButton = () => {
-    const phoneNumber = "+1234567890"; // Replace with the actual phone number
+    const phoneNumber = "+918169225341"; // Replace with the actual phone number
 
     return (
         <a href={`tel:${phoneNumber}`} className="call-button">

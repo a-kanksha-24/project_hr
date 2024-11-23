@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { imagesData } from "../assets/facilities"; // Assuming the correct path for the array of image objects
+import { imagesData } from "../assets/facilities"; 
 import { Link } from "react-router-dom";
 import { ShopContext } from "../shop-context";
 
@@ -8,7 +8,6 @@ const CardComponent = () => {
 
   return (
     <div className="card-container">
-      {/* Render only the visible images based on the current state */}
       {imagesData.map((image) => (
         <div className="main-card" key={image.id}>
           <img src={image.url} alt={image.title} className="card-image" />

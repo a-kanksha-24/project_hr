@@ -54,7 +54,6 @@ function App() {
           <Route path="/Seed Therapy" element={<SeedTherapy/>} />
           <Route path="/Color Therapy" element={<ColorTherapy/>} />
           <Route path="/Diet and Nutrision" element={<Diet/>} />
-
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
         <ChatButton/>

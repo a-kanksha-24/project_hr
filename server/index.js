@@ -14,20 +14,21 @@ app.post('/send-email', (req, res) => {
 
     
     const transporter = nodemailer.createTransport({
-        service: 'Gmail', // e.g., Gmail, Yahoo
+        service: 'Gmail',
         auth: {
-            user: process.env.USER, // replace with your email
-            pass: process.env.PASS, // replace with your email password or app-specific password
+            user:"swastyahealthcarecentres@gmail.com", 
+            pass: "hkjwonrmfxmxcyga", 
         },
     });
 
     const mailOptions = {
-        from: email, // user's email as the sender
-        to: process.env.USER, // your email to receive the form data
+        from: email, 
+        to: "swastyahealthcarecentres@gmail.com",
         subject: `New Callback Request for ${treatment}`,
         text: `You have received a new callback request:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nTreatment: ${treatment}`,
+        
     };
-
+    // console.log({text})
     // Send the email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

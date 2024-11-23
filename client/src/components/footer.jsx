@@ -30,10 +30,16 @@ const Footer = () => {
         <div className="connect">
           <h2>Connect with us</h2>
           <div>
-          <img src={facebook}alt='facebook'></img>
-          <img src={instagram}alt='instagram'></img>
+            <a href="https://www.facebook.com/profile.php?id=61566815707749&mibextid=ZbWKwL
+" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/swasthya_healthcare_centre?igsh=MTB5bHk1aG4ydm41Zg== " target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="instagram" />
+            </a>
+
           </div>
-          
+
         </div>
       </div>
       <div className="footer-bottom">
