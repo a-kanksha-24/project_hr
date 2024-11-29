@@ -15,7 +15,13 @@ const Sidebar = () => {
     'Seed Therapy',
     'Magnet Therapy',
     'Color Therapy',
-    'Diet and Nutrision'
+    'Diet and Nutrision',
+    'Guasha',
+    'Auricular Acupuncture',
+    'Scalp Acupuncture',
+    'Face Cupping',
+    'Reflexology',
+    'Massage'
   ];
 
   return (

@@ -41,6 +41,12 @@ const Header = () => {
                         <li><a href="/Seed Therapy">Seed Therapy</a></li>
                         <li><a href="/Color Therapy"> Colour Therapy</a></li>
                         <li><a href="/Diet and Nutrision">Diet and Nutrision</a></li>
+                        <li><a href="/Guasha">Guasha</a></li>
+                        <li><a href="/Auricular Acupuncture">Auricular Acupuncture</a></li>
+                        <li><a href="/Scalp Acupuncture">Scalp Acupuncture</a></li>
+                        <li><a href="/Face Cupping">Face Cupping</a></li>
+                        <li><a href="/Reflexology">Reflexology</a></li>
+                        <li><a href="/Massage">Massage</a></li>
                     </ul>
                 </li>
                 <li><a href="/Events">UPCOMING EVENTS</a></li>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./magnet.css";
+import "./treatment.css";
 import magnet from "./images/magnet.jpg";
 
 const Content = () => {
@@ -47,7 +47,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="magnet-effects">
+      <section className="acupuncture-effects">
         <h2>Benefits of Magnet Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -58,7 +58,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="magnet-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Magnet Therapy Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./accupuncture.css";
+import "./treatment.css";
 import accupunc from "./images/accupunc.jpg";
 
 const Content = () => {

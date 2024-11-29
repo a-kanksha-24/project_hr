@@ -1,5 +1,5 @@
 import React from "react";
-import "./diet.css";
+import "./treatment.css";
 import balanced from "./images/balanceddiet.png";
 
 const Content = () => {
@@ -48,7 +48,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="nutrition-effects">
+      <section className="acupuncture-effects">
         <h2>Benefits of a Balanced Diet</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -59,7 +59,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="nutrition-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Good Nutrition Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./color.css";
+import "./treatment.css";
 import colorTherapyImage from "./images/colortherapy.jpg";
 
 const Content = () => {
@@ -48,7 +48,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="color-therapy-effects">
+      <section className="acupuncture-effects">
         <h2>Benefits of Color Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -59,7 +59,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="color-therapy-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Color Therapy Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

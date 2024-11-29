@@ -1,5 +1,5 @@
 import React from "react";
-import "./seedTherapy.css";
+import "./treatment.css";
 import seed from "./images/seedtherapy.jpg";
 
 const Content = () => {
@@ -42,7 +42,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="seed-effects">
+      <section className="acupuncture-effects">
         <h2>Effects of Seed Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -53,7 +53,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="seed-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Seed Therapy Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

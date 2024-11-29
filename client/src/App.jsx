@@ -26,6 +26,12 @@ import WetCuppingTherapy from "./components/navbar/Treatment/wetCupping";
 import SeedTherapy from "./components/navbar/Treatment/seedTherapy";
 import ColorTherapy from "./components/navbar/Treatment/color";
 import Diet from "./components/navbar/Treatment/diet";
+import Guasha from './components/navbar/Treatment/guasha';
+import Auricular from "./components/navbar/Treatment/auricular";
+import Scalp from "./components/navbar/Treatment/scalpacu";
+import Face from "./components/navbar/Treatment/face";
+import Reflexology from "./components/navbar/Treatment/reflexology";
+import Massage from "./components/navbar/Treatment/massage";
 
 function App() {
   return (
@@ -54,6 +60,12 @@ function App() {
           <Route path="/Seed Therapy" element={<SeedTherapy/>} />
           <Route path="/Color Therapy" element={<ColorTherapy/>} />
           <Route path="/Diet and Nutrision" element={<Diet/>} />
+          <Route path="/Guasha" element={<Guasha/>} />
+          <Route path="/Auricular Acupuncture" element={<Auricular/>} />
+          <Route path="/Scalp Acupuncture" element={<Scalp/>} />
+          <Route path="/Face Cupping" element={<Face/>} />
+          <Route path="/Reflexology" element={<Reflexology/>} />
+          <Route path="/Massage" element={<Massage/>} />
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
         <ChatButton/>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./cuppingtherapy.css";
+import "./treatment.css";
 import accupressure from "./images/accupressure.webp";
 
 const Content = () => {

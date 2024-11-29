@@ -1,5 +1,5 @@
 import React from "react";
-import "./aromatherapy.css";
+import "./treatment.css";
 import aroma from "./images/aroma.webp";
 
 const Content = () => {
@@ -50,7 +50,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="aromatherapy-effects">
+      <section className="acupuncture-effects">
         <h2>Benefits of Aromatherapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -61,7 +61,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="aromatherapy-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Aromatherapy Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

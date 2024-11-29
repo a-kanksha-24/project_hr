@@ -1,5 +1,5 @@
 import React from "react";
-import "./pulseDiagnosis.css";
+import "./treatment.css";
 import pulse from "./images/pulse.jpg";
 
 const Content = () => {
@@ -48,7 +48,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="pulse-effects">
+      <section className="acupuncture-effects">
         <h2>Benefits of Pulse Diagnosis</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -59,7 +59,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="pulse-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Pulse Diagnosis Help With?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./wetCupping.css";
+import "./treatment.css";
 import wet from "./images/wetcupping.jpg";
 
 const Content = () => {
@@ -42,7 +42,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="wet-cupping-effects">
+      <section className="acupuncture-effects">
         <h2>Effects of Wet Cupping Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -53,7 +53,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="wet-cupping-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Wet Cupping Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (

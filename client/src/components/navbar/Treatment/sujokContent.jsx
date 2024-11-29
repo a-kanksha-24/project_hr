@@ -1,5 +1,5 @@
 import React from "react";
-import "./sujok.css";
+import "./treatment.css";
 import sujok from "./images/sujok.jpg";
 
 const Content = () => {
@@ -42,7 +42,7 @@ const Content = () => {
         </p>
       </section>
 
-      <section className="sujok-effects">
+      <section className="acupuncture-effects">
         <h2>Effects of Sujok Therapy</h2>
         <ul className="effect-list">
           {effects.map((effect, index) => (
@@ -53,7 +53,7 @@ const Content = () => {
         </ul>
       </section>
 
-      <section className="sujok-conditions">
+      <section className="acupuncture-conditions">
         <h2>What Can Sujok Therapy Treat?</h2>
         <div className="conditions-grid">
           {conditions.map((condition, index) => (
