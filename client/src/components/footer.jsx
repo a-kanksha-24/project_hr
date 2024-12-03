@@ -9,22 +9,19 @@ const Footer = () => {
         <div className="services">
           <h2>Our Services</h2>
           <p>
-            Acupuncture in Mumbai | Acupressure in Mumbai | Moxibustion | Colon Hydrotherapy | Scalp Acupuncture | Cupping |
-            Wet Cupping | Fire Cupping | Point Injection Therapy | Superficial heat & cold therapy | Cosmetic Acupuncture |
-            Physiotherapy | Acupressure for Kid | Cryotherapy | Naturopathy | Ozone Therapy | Chelation Therapy |
-            Yoga & Diet Therapy | Breathing and Relaxation
+            Acupuncture | Acupressure| Pulse Diagnosis | Aroma Therapy | Dry Cupping Therapy | Magnet Therapy | Fire Cuppng Therapy | Wet Cupping Therapy | Sujok Therapy | Seed Therapy | Color Therapy | Diet Nutrision | Guasha | Auricular Acupuncture | Scalp Acupuncture | Face Cupping | Reflexology | Massage
           </p>
         </div>
         <div className="expert-team">
           <h2>Our Expert Doctor Team</h2>
           <p>
-            Hr. Santosh Pandey | Dr. Dinesh K. Rohira | Acupressure Specialists in Mumbai | Acupuncture Center in Mumbai
+            Hr. Shreyas Joshi | Hr. Swati Joshi | Healthcare Centre in Mumbai
           </p>
         </div>
         <div className="about">
           <h2>About Swasthya</h2>
           <p>
-            Write about Rejua Energy Center
+          Swasthya Healthcare Centre is committed to holistic health and healing through a comprehensive approach to natural therapies. Our expert practitioners offer a range of treatments including pulse diagnosis, acupuncture, acupressure, color therapy, seed therapy, wet cupping therapy, and personalized diet and nutrition plans. We believe in treating each individual as a whole, addressing mind, body, and spirit to help you achieve balance, wellness, and vitality.
           </p>
         </div>
         <div className="connect">
