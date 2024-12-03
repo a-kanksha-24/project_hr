@@ -120,14 +120,24 @@ body {
   position: relative;
   /* margin-right: 10px; */
 }
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: center;
+}
 
 .background-section img{
   height: 100%;
   width: 100%;
 }
 
-/* Card container */
-/* Styles for the card container */
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
