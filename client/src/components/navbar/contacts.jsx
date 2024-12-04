@@ -1,4 +1,4 @@
-
+import RequestCallbackForm from '../rcallback';
 const Contacts = () => {
   return (
     <div className="contacts-container">
@@ -16,6 +16,7 @@ const Contacts = () => {
           <h3>Location</h3>
           <p>Mumbai</p>
         </div>
+        <RequestCallbackForm />
       </div>
     </div>
   );

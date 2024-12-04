@@ -32,6 +32,7 @@ import Scalp from "./components/navbar/Treatment/scalpacu";
 import Face from "./components/navbar/Treatment/face";
 import Reflexology from "./components/navbar/Treatment/reflexology";
 import Massage from "./components/navbar/Treatment/massage";
+import Acupuncturetcm from "./components/navbar/Treatment/acupuncturetcm";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
           <Route path="/Face Cupping" element={<Face/>} />
           <Route path="/Reflexology" element={<Reflexology/>} />
           <Route path="/Massage" element={<Massage/>} />
+          <Route path="/Acupuncture(TCM)" element={<Acupuncturetcm/>} />
         </Routes>
         <CallNowButton phoneNumber={8299178726} />
         <ChatButton/>
@@ -74,5 +76,4 @@ function App() {
     </ShopContextProvider>
   );
 }
-
 export default App;
