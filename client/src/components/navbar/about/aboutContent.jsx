@@ -95,7 +95,9 @@ const Content = () => {
       <section className="contact-info">
         <h2>Contact Us</h2>
         <p>
-          To learn more about our therapies or to book a session, please reach out to us at <a href="mailto:info@swasthyacentre.com">info@swasthyacentre.com</a> or call us at (123) 456-7890. Let us support you on your journey to natural health and wellness!
+          To learn more about our therapies or to book a session, please reach out to us at <a href="mailto:swastyahealthcarecentres@gmail.com">swastyahealthcarecentres@gmail.com</a> or call us at +91 8169225341
+
+. Let us support you on your journey to natural health and wellness!
         </p>
       </section>
     </div>
