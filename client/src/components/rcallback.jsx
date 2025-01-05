@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const RequestCallbackForm = () => {
     const [formData, setFormData] = useState({
@@ -23,13 +22,24 @@ const RequestCallbackForm = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/send-email', formData);
-            setResponseMessage(response.data.message);
+            // Submit the form data to Formspree
+            const response = await fetch('https://formspree.io/f/mgvvpyln', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setResponseMessage('Form submitted successfully!');
+            } else {
+                setResponseMessage('Failed to submit the form. Please try again.');
+            }
         } catch (error) {
-            console.error('Error sending email:', error);
-            setResponseMessage('Failed to send email. Please try again later.');
+            console.error('Error submitting the form:', error);
+            setResponseMessage('An error occurred. Please try again.');
         }
 
+        // Reset the form after submission
         setFormData({
             name: '',
             phone: '',
